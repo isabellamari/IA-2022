@@ -1,0 +1,28 @@
+import tkinter
+from tkinter import *
+
+# GUI
+root = Tk()
+root.geometry("730x730")
+root.configure(bg='lavender')
+
+# top label
+top_label = Label(root, text='Affirmations', font=('calibre', 40, 'bold'))
+top_label.place(x=120, y=0)
+top_label.configure(bg='lavender')
+
+# right label
+right_label = Label(root, font=('calibre', 10, 'normal'))
+right_label.place(x=545, y=10, width=160, height=710)
+right_label.configure(bg='light pink')
+
+# text entry box
+entry_box = Text(root, font=('calibre', 10, 'normal'))
+entry_box.place(x=10, y=70, width=525, height=650)
+entry_box.configure(bg='light blue') #cornflower blue; lavender blush; light blue; light pink
+
+# scroll bar
+sb = Scrollbar(root)
+sb.pack(side=RIGHT, fill=BOTH)
+
+root.mainloop()
